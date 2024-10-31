@@ -38,7 +38,7 @@ const Header = () => {
               />
               <NavigationLink
                 bg="#51538f"
-                textColor="green"
+                textColor="black"
                 to="/signup"
                 text="Signup"
               />
