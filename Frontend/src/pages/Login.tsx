@@ -1,4 +1,5 @@
 import { Box , Typography, Button} from  "@mui/material";
+import { AiOutlineLogin } from "react-icons/ai";
 import CustomizeInput from "../components/shared/CustomizeInput";
 
 const Login = () => {
@@ -50,6 +51,8 @@ const Login = () => {
             color:"black", 
           },
         }}
+        endIcon = { <AiOutlineLogin/>}
+
           >
             Login
           </Button>
