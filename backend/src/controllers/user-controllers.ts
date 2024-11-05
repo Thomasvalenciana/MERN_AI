@@ -3,7 +3,7 @@ import { NextFunction, Request, Response} from "express";
 import User from "../models/User.js"
 import { hash, compare } from  "bcrypt"; 
 import { createToken } from "../utils/token-manager.js";
-import path  from "path";
+
 import { COOKIE_NAME } from "../utils/constants.js";
 
 export const getAllUsers = async (req: Request,res: Response,next: NextFunction ) => {
@@ -97,7 +97,7 @@ export const userLogin = async (req: Request,res: Response,next: NextFunction ) 
 
 export const verifyUser = async (req: Request,res: Response,next: NextFunction ) => {
     try{
-        
+         //user token check
        
         const user = await User.findById(res.locals.jwtData.id);
         if (!user){
