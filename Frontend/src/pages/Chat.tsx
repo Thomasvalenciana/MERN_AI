@@ -104,6 +104,20 @@ const Chat = () => {
             
           ))}
         </Box>
+        <div style ={{ width:"100%", padding: "20px", borderRadius:8, backgroundColor:"rgb(17, 27, 39)", display: "flex", margin:"auto" }}>
+        {" "}
+        <input 
+         type = "text"
+          style={{ 
+          width: "100%",
+          backgroundColor: "transparent", 
+          padding:'10px',
+          border:"none", 
+          outline:"none", 
+          color:"white", 
+          fontSize:"20px",}} 
+          />
+          </div>
       </Box>
     </Box>
   );
