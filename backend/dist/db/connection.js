@@ -5,7 +5,7 @@ async function connectToDatabase() {
     }
     catch (error) {
         console.log(error);
-        throw new Error(" cannot connect to mongo db");
+        throw new Error("Could not Connect To MongoDB");
     }
 }
 async function disconnectFromDatabase() {
@@ -14,7 +14,7 @@ async function disconnectFromDatabase() {
     }
     catch (error) {
         console.log(error);
-        throw new Error(" cannot connect to mongo db");
+        throw new Error("Could not Disconnect From MongoDB");
     }
 }
 export { connectToDatabase, disconnectFromDatabase };

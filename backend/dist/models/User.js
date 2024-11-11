@@ -3,29 +3,29 @@ import { randomUUID } from "crypto";
 const chatSchema = new mongoose.Schema({
     id: {
         type: String,
-        default: () => randomUUID(), // Use a function for default UUID generation
+        default: randomUUID(),
     },
     role: {
         type: String,
-        required: true, // Fix typo here
+        required: true,
     },
     content: {
         type: String,
-        required: true, // Fix typo here
+        required: true,
     },
 });
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true, // Replace TextTrackCue with true
+        required: true,
     },
     email: {
         type: String,
-        required: true, // Fix typo here
+        required: true,
         unique: true,
     },
     password: {
-        type: String, // Fix typo here
+        type: String,
         required: true,
     },
     chats: [chatSchema],
